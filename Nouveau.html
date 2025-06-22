@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FITA FARMS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('backound.png') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    header {
+      background: rgba(0, 80, 50, 0.7);
+      text-align: center;
+      padding: 30px 20px;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    header img {
+      width: 300px;
+      height: 200px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #f8ec31fb;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #fae112;
+    }
+    nav {
+      background-color: #024d1a;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: yellow;
+      text-decoration: calibri;
+      margin: 10px 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00ff80;
+    }
+    section {
+      background: rgba(0,0,0,0.6);
+      margin: 25px auto;
+      padding: 30px 20px;
+      max-width: 900px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,255,150,0.2);
+      animation: fadeIn 1s ease-in-out;
+    }
+    section img {
+      max-width: 100%;
+      border-radius: 15px;
+      margin-top: 15px;
+    }
+    .produit-item {
+      margin: 20px 0;
+      padding: 15px;
+      border: 1px solid #00ff80;
+      border-radius: 15px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.05);
+      transition: transform 0.3s ease;
+    }
+    .produit-item:hover {
+      transform: scale(1.05);
+    }
+    .produit-item img {
+      width: 1920px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    footer {
+      background-color: #023d14;
+      text-align: center;
+      padding: 15px;
+      color: red;
+      font-size: 0.9em;
+      border-top: 2px solid #00ff80;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo">
+    <h1>FITA FARMS</h1>
+    <p>Fiaferana | 📞 032 60 578 88 | pages: FITA FARMS</p>
+  </header>
+
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#produits">Produits</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="accueil">
+    <h2>Tongasoa eto amin tranokala ny FITA FARMS</h2>
+    <p>vokatra avy amin'ny tany tsy mampiasa zezoka simika mba hiarovana ny tontolo iainana.Ary koa mba hitondra soa ho antsika ny vokatrin'ny tany fa tsy hankarary sanatria ❤️🌿</p>
+    <img src="photo-ferme.png" alt="Ferme principale">
+  </section>
+
+  <section id="produits">
+    <h2>Nos Produits</h2>
+
+    <div class="produit-item">
+      <h3>Salade - 500Ar</h3>
+      <img src="salade.jpg" alt="Salade">
+    </div>
+    <div class="produit-item">
+      <h3>Atody - 2000</h3>
+      <p>atody poulard izy tony mbola afaka akotrika tsara </p>
+      <img src="atody.jpg" alt="Atody">
+    </div>
+    <div class="produit-item">
+      <h3>Akoho - manomboka amin 25000</h3>
+      <img src="akoho.jpg" alt="Akoho">
+    </div>
+    <div class="produit-item">
+      <h3>Charbon - 3000Ar</h3>
+      <img src="charbon.jpg" alt="Charbon">
+    </div>
+  </section>
+
+  <section id="galerie">
+    <h2>Galerie</h2>
+    <div style="display:flex; gap:15px; flex-wrap: wrap; justify-content: center;"> 
+    <p>mamokatra salade karazany roa ny ato amin FITA FARMS mifantoka bebe kokoa amin'ny fambolena izahay aloha amin'izao </p>
+      <img src="photo1.jpg" alt="Photo 1" style="width:1920px;">
+      <p> zanatsalady fotsy sy mena vao avy nafindra</p>
+      <img src="photo2.jpg" alt="Photo 2" style="width:1920px;">
+      <img src="photo3.jpg" alt="Photo 3" style="width:1920px;">
+      <video controls width="100%">
+  <source src="video1.mp4" type="video/mp4">
+</video>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><strong>Adresse :</strong> Fiaferana</p>
+      <!-- Logo Facebook -->
+<a href="https://www.facebook.com/profile.php?id=61573446569120" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+       alt="Facebook" width="26" style="margin-right: 10px;"><strong>FITA FARMS</strong></p>
+</a>
+<br
+<!-- Logo WhatsApp -->
+<a href="https://wa.me/261326057888" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+       alt="WhatsApp" width="26"> <strong>+26132605788</strong>
+</a>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 FITA FARMS. Tous droits réservés.
+  </footer>
+
+</body>
+</html>
